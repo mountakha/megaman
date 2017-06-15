@@ -1,0 +1,520 @@
+body {
+    background: black;
+    color: white;
+    /*min-height: 100%;
+    position:relative;
+    margin: 0;
+    padding: 0;*/
+    height: 100%;
+    width: 100%;
+}
+#first{
+    margin:0;
+    padding:0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navbar {
+    font-family: 'Press Start 2P', cursive;
+    text-transform: uppercase;
+    padding-top: 2vh;
+    font-size: 20px;
+    margin-right: 30px;
+}
+
+nav.navbar-webmaster { background: black; border-radius: 0px; }
+nav.navbar-webmaster a { color: #fff;  margin:20px; font-size: 20px;}
+nav.navbar-webmaster ul.navbar-nav a { color: #fff; border-style: solid; border-width: 2px 0 0 0;border-color:#1b242c; }
+nav.navbar-webmaster ul.navbar-nav a:hover,
+nav.navbar-webmaster ul.navbar-nav a:visited,
+nav.navbar-webmaster ul.navbar-nav a:focus,
+nav.navbar-webmaster ul.navbar-nav a:active { background:#3b4045; }
+nav.navbar-webmaster ul.navbar-nav a:hover {border-color: dodgerblue; }
+nav.navbar-webmaster li.divider { background: #ccc; }
+nav.navbar-webmaster button.navbar-toggle { background:  #1b242c; border-radius: 1px; }
+nav.navbar-webmaster button.navbar-toggle:hover { background: #999; }
+nav.navbar-webmaster button.navbar-toggle > span.icon-bar { background: #fff; }
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,300);
+
+
+
+/*Thanu
+BLOC
+
+.cases {
+height: 45vh;
+display: flex;
+padding: 0;
+
+}
+.casetxt{
+padding: 5vh;   
+}
+
+.case2 {
+background-image: url(../Image/case2.png);
+}
+
+.case4 {
+background-image: url(../Image/case4.png);
+}
+
+.case6 {
+background-image: url(../Image/case6.png);
+}
+*/
+
+
+
+/*Ousmane*/
+
+.gal-container{
+    margin-top: 50px;
+    padding: 0px;
+    width: 100%;
+}
+.gal-item{
+    overflow: hidden;
+    padding: 0px;
+}
+.gal-item .box{
+    height: 300px;
+    overflow: hidden;
+}
+.box img{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    -o-object-fit:cover;
+}
+.box p{
+    text-align: center;
+    padding: 20%;
+    font-family: 'Sirin Stencil', cursive;
+    color: white;
+}
+#resp{
+    background-color: mediumblue;
+    font-size: 1.2em;
+    font-family: 'Sirin Stencil', cursive;
+    margin: 0 auto;
+    text-align: center;
+
+
+}
+#respo{
+    background-color: midnightblue;
+    font-size: 1.2em;
+    font-family: 'Sirin Stencil', cursive;
+    margin: 0 auto;
+    text-align: center;
+
+
+}
+#respon{
+    background-color: dodgerblue;
+    font-size: 1.2em;
+    font-family: 'Sirin Stencil', cursive;
+    margin: 0 auto;
+    text-align: center;
+
+
+}
+.box font p{
+    color: black;
+}
+
+.gal-item a:focus{
+    outline: none;
+}
+.gal-item a:after{
+    content:"\e003";
+    font-family: 'Sirin Stencil', cursive;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: absolute;
+    right: 3px;
+    left: 3px;
+    top: 3px;
+    bottom: 3px;
+    text-align: center;
+    line-height: 350px;
+    font-size: 30px;
+    color: #fff;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+}
+.gal-item a:hover:after{
+    opacity: 1;
+}
+.modal-open .gal-container .modal{
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+}
+.modal-open .gal-item .modal-body{
+    padding: 0px;
+    margin: 0px;
+    background-color: white;
+
+
+
+}
+.modal-open .gal-item button.close{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #000;
+    opacity: 1;
+    color: #fff;
+    z-index: 999;
+    right: -12px;
+    top: -12px;
+    border-radius: 50%;
+    font-size: 15e.m;
+    border: 2px solid #fff;
+    line-height: 25px;
+    -webkit-box-shadow: 0 0 1px 1px rgba(0,0,0,0.35);
+    box-shadow: 0 0 1px 1px rgba(0,0,0,0.35);
+}
+.modal-open .gal-item button.close:focus{
+    outline: none;
+}
+.modal-open .gal-item button.close span{
+    position: relative;
+    top: -3px;
+    font-weight: lighter;
+    text-shadow:none;
+}
+.gal-container .modal-dialogue{
+    width: 80%;
+}
+
+}
+.gal-container .modal.fade .modal-dialog {
+    -webkit-transform: scale(0.1);
+    -moz-transform: scale(0.1);
+    -ms-transform: scale(0.1);
+    transform: scale(0.1);
+    top: 50px;
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.gal-container .modal.fade.in .modal-dialog {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform: translate3d(0, -100px, 0);
+    transform: translate3d(0, 25%, 0);
+    opacity: 1;
+}
+@media (min-width: 768px) {
+    .gal-container .modal-dialog {
+        width: 60%;
+        margin: 50 auto;
+    }
+}
+@media (max-width: 768px) {
+    .gal-container .modal-content{
+        height:250px;
+    }
+}
+.padding40 {
+    padding:5%;
+    background-color:darkgrey;
+    color: white;
+    font-family: 'Sirin Stencil', cursive;
+    font-size: 1.8em;
+    margin: 5%;
+
+}
+
+.bgcolor1 {
+    background:black;
+}
+
+
+/*@media screen and (min-width:600px) and (max-width:900px) {
+
+.cases {
+font-size: 0.80em;
+height: 30vh;
+}
+}
+
+@media screen and (min-width:0px) and (max-width:599px) {
+
+.cases {
+font-size: 0.60em;
+height: 20vh;
+
+}
+}
+
+.center{
+width: 100%;
+height: 300px;
+background-color: black;
+border: 1 px solid blank;
+color: white;
+padding-left: 75px;
+padding-right: 75 px;
+padding: 60px;
+font-size: 23px;
+}*/
+
+/*footer{
+
+background-color: black;
+border: 1px solid blank;
+background-image: url(../Image/Rectangle1copie%202.png);
+background-repeat: no-repeat;
+text-align: left;
+background-size: cover;
+padding-bottom: 250px;
+padding-bottom: fixed;
+width: 100% ;
+height: 100% ;
+}*/
+
+/*footer{
+position: absolute;
+border: 1px solid blank;
+background-color: #000030;
+padding-bottom: fixed;
+margin-bottom: 0;
+padding-bottom: 0;
+background-position: fixed bottom;
+height: 85%;
+width: 100%;
+
+}
+
+.txt {
+margin-right: 27%;
+margin-left: 5%;
+margin-top: 0px;
+padding-left: 25px;
+padding-right: 75px;
+margin-top: 25px;
+padding : -25px;
+position:relative;
+text-align: justify;
+font-size: 1.8em;
+font-family: 'Sirin Stencil', cursive;
+display: inline-block table-cell;
+float: right;
+}
+.recherche{
+margin-left: 90%;
+margin-top: -190px;
+padding : 15px;
+color: darkgrey;
+position:relative;
+font-size: 0.8em;
+font-family: 'Sirin Stencil', cursive;
+display: inline-block table-cell;
+float: right;
+}
+p#bas{
+margin-bottom: 0px;
+padding-bottom: 0px;
+padding-top: 40px;
+padding-left: 75px ;
+text-align: center;
+color: white;
+margin-top: -55px;
+
+}*/
+#fourth{
+    background-color: #03224C;
+    margin:0;
+    padding:0;
+    background-repeat: no-repeat;
+    background-size: cover;  
+
+}
+
+.rating{unicode-bidi:bidi-override;direction:rtl;font-size:30px}.rating span.star{font-family:FontAwesome;font-weight:normal;font-style:normal;display:inline-block}.rating span.star:hover{cursor:pointer}
+.rating span.star:before{content:"\f006";padding-right:5px;color:#999}
+.rating span.star:hover:before,.rating span.star:hover~span.star:before{content:"\f005";color:#e3cf7a}
+
+h3{
+    color: white;
+    font-size: 1.4em;
+    font-family: 'Sirin Stencil', cursive;
+}
+.col-md-7{
+    color: white;
+    font-size: 1.4em;
+    font-family: 'Sirin Stencil', cursive;
+
+}
+.col-md-5{
+    color: white;
+    font-size: 1.4em;
+    font-family: 'Sirin Stencil', cursive;
+}
+.lol{
+    color: white;
+    text-align: center;
+    font-family: 'Sirin Stencil', cursive;
+    display: block;
+}
+
+#custom-search-form {
+    margin:0;
+    margin-top: 5px;
+    padding: 0;
+}
+
+#custom-search-form .search-query {
+    padding-right: 3px;
+    padding-right: 4px \9;
+    padding-left: 3px;
+    padding-left: 4px \9;
+    margin-bottom: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-transition: width  0.2s ease-in-out;
+    -moz-transition:width  0.2s ease-in-out;
+    -o-transition: width  0.2s ease-in-out;
+    transition: width  0.2s ease-in-out;
+}
+
+#custom-search-form button {
+    border: 0;
+    background: none;
+    /** belows styles are working good */
+    padding: 2px 5px;
+    margin-top: 2px;
+    position: relative;
+    left: -28px;
+    /* IE7-8 doesn't have border-radius, so don't indent the padding */
+    margin-bottom: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.search-query:focus + button {
+    z-index: 3;   
+}   
+.search-query:focus{
+    width: 260px;
+}   
+
+
+.icon-set{
+    background: transparent;
+}
+
+.fa {
+    color: #fff;
+}
+
+.nav > li.facebook > a:hover {
+    background: #3b5998 !important;
+}
+
+.nav > li.twitter > a:hover {
+    background: #55acee !important;
+}
+
+.nav > li.instagram > a:hover {
+    background: #405de6;
+    background: -webkit-linear-gradient(left top, #405de6, #833ab4, #fd1d1d, #f56040, #fcaf45);
+    background: -o-linear-gradient(bottom right, #405de6, #833ab4, #fd1d1d, #f56040, #fcaf45);
+    background: -moz-linear-gradient(bottom right, #405de6, #833ab4, #fd1d1d, #f56040, #fcaf45);
+    background: linear-gradient(to bottom right, #405de6, #833ab4, #fd1d1d, #f56040, #fcaf45);
+}
+
+
+.navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+}
+
+.container{
+    width: 100%;
+      height: 350px;
+}
+/* pagination */
+
+/*p{
+     display: block;
+    position: center;
+    width: 180px;
+    height: auto;
+    color: green;
+   
+}
+*/
+ul{ border:5px; margin:0 auto; padding:0 auto;}
+
+#pagination-clean li
+{
+    text-align: center;
+    border:0; 
+    margin:0; 
+    padding:0;
+    font-size:11px;
+    list-style:none;
+}
+
+#pagination-clean li, #pagination-clean a
+{
+    margin-right:2px;
+    text-align: center;
+    position: center;
+    
+}
+
+#pagination-clean .previous-off, #pagination-clean .next-off 
+{
+    color:#888888;
+    display:block;
+    float:left;
+    font-weight:bold;
+    padding:3px 4px;
+}
+
+#pagination-clean .next a, #pagination-clean .previous a 
+{
+    font-weight:bold;
+    border:solid 1px #FFFFFF;
+}
+
+#pagination-clean .active
+{
+    color:aqua;
+    font-weight:bold;
+    display:block;
+    float:left;
+    padding:4px 6px;
+}
+
+#pagination-clean a:link, #pagination-clean a:visited 
+{
+    color:#0033CC;
+    display:block;
+    float:left;
+    padding:3px 6px;
+    text-decoration:none;
+}
+
+#pagination-clean a:hover
+{
+    text-decoration:none;
+}
+label {
+ margin-top:10px;
+
+ }
+
